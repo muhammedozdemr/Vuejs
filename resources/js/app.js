@@ -19,8 +19,8 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/Ders1.vue').default);
-
+Vue.component('birinci-ders', require('./components/Ders1.vue').default);
+Vue.component('ikinci-ders', require('./components/Ders2.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

@@ -10,7 +10,7 @@
     </head>
     <body>
         <div id="app">
-            <example-component></example-component>
+            <ikinci-ders></ikinci-ders>
         </div>
     </body>
     <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
