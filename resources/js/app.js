@@ -21,6 +21,8 @@ window.Vue = require('vue');
 
 Vue.component('birinci-ders', require('./components/Ders1.vue').default);
 Vue.component('ikinci-ders', require('./components/Ders2.vue').default);
+Vue.component('ucuncu-ders', require('./components/Ders3.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

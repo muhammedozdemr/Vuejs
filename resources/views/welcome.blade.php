@@ -10,7 +10,9 @@
     </head>
     <body>
         <div id="app">
-            <ikinci-ders></ikinci-ders>
+            <!-- <birinci-ders></birinci-ders> -->
+            <!-- <ikinci-ders></ikinci-ders> -->
+            <ucuncu-ders></ucuncu-ders>
         </div>
     </body>
     <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
