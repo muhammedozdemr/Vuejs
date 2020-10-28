@@ -12,7 +12,9 @@
         <div id="app">
             <!-- <birinci-ders></birinci-ders> -->
             <!-- <ikinci-ders></ikinci-ders> -->
-            <ucuncu-ders></ucuncu-ders>
+            <!-- <ucuncu-ders></ucuncu-ders> -->
+            <!-- <dorduncu-ders></dorduncu-ders> -->
+            <besinci-ders></besinci-ders>
         </div>
     </body>
     <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
