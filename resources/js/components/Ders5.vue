@@ -27,27 +27,18 @@
                        <button :disabled="errors.length>0 || name==''" @click="create" class="btn btn-primary">Oluştur</button>
                     </div>  
                 </div>  
-                <!-- kullanıcı var ise listeyi göster yok ise gösterme -->
-                 <div v-if="users.length>0" class="card mt-5">
-                    <div class="card-header">
-                        Üye Listesi
-                    </div>  
-                    <div class="card-body">
-                    	<!-- kullanıcıyı listele -->
-                       	<li :key="key" v-for="(user,key) in users">
-                       		{{user}}
-                       		<!--kullanıcıyı sil -->
-                       		<small @click="deleteUsers(key)">Sil</small>
-                       	</li>
-                   	
-                    </div>  
-                </div>               
+                <user-list @deleteUser="deleteUsers" :users="users"></user-list>
+                             
             </div>
         </div>
     </div>
 </template>
 <script>
-	export default {
+  import userList from './userList.vue'
+	export default {//diğer sayfaya veri gönderme
+    components:{
+      userList
+    },
 		data(){
 			return{
 				name:'',
@@ -81,6 +72,7 @@
 		methods:{
 			create(){ //kullanıcı ekle
 				this.users.push(this.name)
+        this.name=''
 			},
 			deleteUsers(key){ //kullanıcı sil
 				this.$delete(this.users,key)
